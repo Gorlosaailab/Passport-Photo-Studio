@@ -1,5 +1,11 @@
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+**UI में बटन्स जोड़ें:** `index.html` में जहाँ फोटो दिख रही है, उसके नीचे ये बटन कोड जोड़ें ताकि यूजर फोटो को घुमा या एडजस्ट कर सके:
+   ```html
+   <div class="controls">
+       <button onclick="cropper.rotate(-90)">Rotate Left</button>
+       <button onclick="cropper.rotate(90)">Rotate Right</button>
+       <button onclick="cropper.reset()">Reset</button>
+   </div> <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
